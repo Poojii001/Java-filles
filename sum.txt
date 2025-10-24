@@ -1,0 +1,17 @@
+import java.io.*;
+class sum
+{
+public static void main(String[] args)
+{
+int x,y;
+InputStreamReader isr = newInputStreamReader(System.in);
+BufferReader br = new BufferReader(isr);
+
+System.out.println("Enter first number :");
+x = Integer.parseInt(br.readLine());
+System.out.println("Enter second number :");
+x = Integer.parseInt(br.readLine());
+
+System.out.println("The sum is = " +(x+y));
+}
+}

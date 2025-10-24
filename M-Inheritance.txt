@@ -1,0 +1,17 @@
+class Parent
+{
+int salary = 10000;
+}
+class Child1 extends Parent
+{
+class child_salary1 = 50000;
+}
+class Child2 extends Child1
+{
+int child_salary2 = 25000;
+public static void main(String[] args)
+{
+Child2 c1 = new Child2();
+System.out.println("Parent Salary = "+c1.salary+ "Child  Salary1 = "+c1.child_salarry1+ "Child Salary = "+child_salary2);
+}
+}
