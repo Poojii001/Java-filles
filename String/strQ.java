@@ -38,7 +38,7 @@ for(int i = 0; i < data.length(); i++)
 System.out.println(data);
 temp = "";
 }}}
-*/
+
 
 //wap to accept a string in lowercase and change the first letter of every.
 import java.util.*;
@@ -57,8 +57,24 @@ String newstr = String.valueOf(ch).toUpperCase();
 String str2 = newstr + arr[i].substring(1);
 System.out.println(str2+ " ");
 }}}
+Wap to reverse a given string .
+*/
 
-
+import java.util.*;
+class Q4
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter words :");
+String str1 = sc.nextLine();
+String rev = " ";
+for(int i =str1.length()-1 ; i >=0  ; i--)
+{
+rev = rev +str1.charAt(i);
+}
+System.out.println(rev);
+}}
 
 
 
