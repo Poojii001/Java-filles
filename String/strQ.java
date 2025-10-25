@@ -1,3 +1,4 @@
+/*
 //wap to count numbers of vowel in given string.
 
 import java.util.*;
@@ -21,4 +22,21 @@ count++;
 System.out.println(count);
 }
 }
- 
+*/
+//wap to accept a code which is contains only a digits.
+import java.util.*;
+class Q2
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter words :");
+String data = sc.nextLine();
+String temp = " ";
+for(int i = 0; i < data.length(); i++)
+{
+System.out.println(data);
+temp = "";
+}
+}
+}
