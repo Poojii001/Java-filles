@@ -58,7 +58,6 @@ String str2 = newstr + arr[i].substring(1);
 System.out.println(str2+ " ");
 }}}
 Wap to reverse a given string .
-*/
 
 import java.util.*;
 class Q4
@@ -75,6 +74,30 @@ rev = rev +str1.charAt(i);
 }
 System.out.println(rev);
 }}
+*/
+//wap to check given string is palindrome or not .
+import java.util.*;
+class Q5
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter words :");
+String str1 = sc.nextLine();
+String rev = "";
+for(int i =str1.length()-1 ; i >=0  ; i--)
+{
+rev = rev +str1.charAt(i);
+}
+if(rev.equals(str1))
+{
+System.out.println("String is palindrome");
+}
+else
+{
+System.out.println("String is not palindrome");
+}}}
+
 
 
 
