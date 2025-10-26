@@ -44,7 +44,7 @@ sbf.replace(3,6,"pal");
 System.out.println("After replacing string buffer "+sbf);
 }
 }
-*/
+
 //capacity()
 class StringBufferExample
 {
@@ -56,3 +56,18 @@ int capacity = sbf.capacity();
 System.out.println(capacity);
 }
 }
+*/
+//ensure()
+class StringBufferExample
+{
+public static void main(String[] args)
+{
+StringBuffer sbf = new StringBuffer();
+sbf.ensureCapacity(16);
+System.out.println(sbf.capacity());
+sbf.ensureCapacity(17);
+System.out.println(sbf.capacity());
+}
+}
+
+
