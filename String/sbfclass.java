@@ -21,7 +21,7 @@ sb.insert(5,"india");
 System.out.println(sb);
 }
 }
-*/
+
 //reverse()
 class StringBufferExample
 {
@@ -30,5 +30,17 @@ public static void main(String[] args)
 StringBuffer sb = new StringBuffer("ducat");
 System.out.println(sb);
 System.out.println(sb.reverse());
+}
+}
+*/
+//replace()
+class StringBufferExample
+{
+public static void main(String[] args)
+{
+StringBuffer sbf = new StringBuffer("pooja");
+System.out.println(sbf);
+sbf.replace(3,6,"pal");
+System.out.println("After replacing string buffer "+sbf);
 }
 }
