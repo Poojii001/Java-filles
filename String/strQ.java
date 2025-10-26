@@ -74,7 +74,7 @@ rev = rev +str1.charAt(i);
 }
 System.out.println(rev);
 }}
-*/
+
 //wap to check given string is palindrome or not .
 import java.util.*;
 class Q5
@@ -97,10 +97,27 @@ else
 {
 System.out.println("String is not palindrome");
 }}}
+*/
 
 
-
-
+import java.util.*;
+class Q6
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter words :");
+String str1 = sc.nextLine();
+char ch[] = str1.toCharArray();
+for(int i = 0; i <ch.length; i++)
+{
+for(int j = i+1; j <ch.length; j++)
+{
+if(ch[i] == ch[j])
+{
+System.out.println("Duplicate character is ="+ch[j]);
+}}}
+}}
 
 
 
