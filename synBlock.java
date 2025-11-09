@@ -1,3 +1,4 @@
+/*
 class Student
 {
 public void Data(String name)
@@ -45,5 +46,24 @@ demo2.start();
 
 Demo demo3 = new Demo(s,"Mahi");
 demo3.start();
-}
-}
+}}
+*/
+
+//Methods
+//await():
+
+class MyThread extends Thread
+{
+int sum = 0;
+public void run()
+{
+for(int i = 1; i <= 10; i++)
+{
+sum = sum+i;
+}}
+public static void main(String[] args)throws InterruptedException
+{
+MyThread t1 = new MyThread();
+t1.start();
+System.out.println(t1.sum);
+}}
