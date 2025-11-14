@@ -15,7 +15,7 @@ else
 {
 System.out.println("File is not present");
 }}}
-*/
+
 //FileCreate:
 
 import java.io.*;
@@ -33,4 +33,16 @@ else
 {
 System.out.println("File is not found");
 }}}
+*/
+
+import java.io.*;
+class MyFile
+{
+public static void main(String[] args)throws IOException
+{
+File file = new File("abc.txt");
+System.out.println(file.exists());
+file.createNewFile();
+System.out.println(file.exists());
+}}
 
