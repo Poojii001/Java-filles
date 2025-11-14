@@ -33,7 +33,6 @@ else
 {
 System.out.println("File is not found");
 }}}
-*/
 
 import java.io.*;
 class MyFile
@@ -45,4 +44,16 @@ System.out.println(file.exists());
 file.createNewFile();
 System.out.println(file.exists());
 }}
+*/
 
+//mkdir():
+import java.io.*;
+class MyFile
+{
+public static void main(String[] args)throws IOException
+{
+File file = new File("abcd");
+System.out.println(file.exists());
+file.mkdir();
+System.out.println(file.exists());
+}}
