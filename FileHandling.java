@@ -44,7 +44,6 @@ System.out.println(file.exists());
 file.createNewFile();
 System.out.println(file.exists());
 }}
-*/
 
 //mkdir():
 import java.io.*;
@@ -55,5 +54,18 @@ public static void main(String[] args)throws IOException
 File file = new File("abcd");
 System.out.println(file.exists());
 file.mkdir();
+System.out.println(file.exists());
+}}
+*/
+
+
+import java.io.*;
+class MyFile
+{
+public static void main(String[] args)throws IOException
+{
+File file = new File("abcd","abc.txt");
+System.out.println(file.exists());
+file.createNewFile();
 System.out.println(file.exists());
 }}
