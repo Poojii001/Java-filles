@@ -56,8 +56,6 @@ System.out.println(file.exists());
 file.mkdir();
 System.out.println(file.exists());
 }}
-*/
-
 
 import java.io.*;
 class MyFile
@@ -69,3 +67,22 @@ System.out.println(file.exists());
 file.createNewFile();
 System.out.println(file.exists());
 }}
+*/
+
+import java.io.*;
+class MyFile
+{
+public static void main(String[] args)throws IOException
+{
+File file = new File("abcd","abc.txt");
+FileWriter fw = new FileWriter(file);
+fw.write(100);
+fw.write("\n");
+fw.write('a');
+fw.write("\n");
+String data = "ducat";
+fw.write("\n");
+fw.close();
+}}
+
+
